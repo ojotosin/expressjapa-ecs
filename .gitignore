@@ -33,4 +33,8 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Environment variable file
 *.env
+
+# bash script
+build_image.sh

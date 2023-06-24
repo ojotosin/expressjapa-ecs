@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket         = "tosin-terraform-remote-state"
-    key            = "rentzone-ecs/terraform.tfstate" # name for the folder to be stored in the bucket with file name
+    key            = "expressjapa-ecs/terraform.tfstate" # indicates that the path, state file will be stored on s3 
     region         = "us-east-1"
     profile        = "terraform-user"
     dynamodb_table = "terraform-state-lock"

@@ -1,6 +1,6 @@
 # allocates an elastic ip address to be used for public subnet az1
 resource "aws_eip" "az1_eip" {
-  vpc = true
+  domain = "vpc"
 
   tags = {
     Name = "${var.project_name}-${var.environment}-AZ1-eip"
@@ -9,7 +9,7 @@ resource "aws_eip" "az1_eip" {
 
 # allocates an elastic ip address to be used for public subnet az2
 resource "aws_eip" "az2_eip" {
-  vpc = true
+  domain = "vpc"
 
   tags = {
     Name = "${var.project_name}-${var.environment}-AZ2-eip"
